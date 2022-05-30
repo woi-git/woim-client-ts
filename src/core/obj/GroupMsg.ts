@@ -2,11 +2,11 @@ import { MsgCst } from "../constant/msg-cst"
 
 export class GroupMsg {
   srcUid:string
-  groupId:number
+  groupId:string
   type:number
   content:string
   timestamp:number
-  constructor(srcUid='',groupId=-1,type=MsgCst.type.TEXT,content='',timestamp=(new Date).getTime()){
+  constructor(srcUid='',groupId='',type=MsgCst.type.TEXT,content='',timestamp=(new Date).getTime()){
     this.srcUid=srcUid
     this.groupId=groupId
     this.type=type
